@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Jobs (
 
 def create_job_description_table():
     """Create table if it doesn't exist"""
-    from db.connection import get_db_connection
+    from db.local.connection import get_db_connection
     with get_db_connection() as conn:
         with conn.cursor() as cursor:
             cursor.execute(CREATE_TABLE_SQL)

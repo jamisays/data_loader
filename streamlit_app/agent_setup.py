@@ -1,6 +1,6 @@
 from langchain_community.agent_toolkits import SQLDatabaseToolkit
-from langchain.agents import create_sql_agent
-# from langchain_community.agent_toolkits.sql.base import create_sql_agent
+# from langchain.agents import create_sql_agent
+from langchain_community.agent_toolkits.sql.base import create_sql_agent
 from langchain.agents import AgentType
 
 from .get_llm import get_llm

@@ -1,7 +1,6 @@
 from typing import List
 
 from cleaners.clean_text import clean_text
-from db.operations import store_job_descriptions
 from loaders.load_raw_pdfs import load_raw_pdfs
 from extractors import extract_features
 

@@ -7,3 +7,4 @@ psycopg[binary,pool]
 streamlit
 langchain_ollama
 langchain-openai
+supabase
