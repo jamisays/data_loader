@@ -1,0 +1,15 @@
+def display_job_descriptions(jobs: str):
+    for job in jobs:
+        print("\n" + "="*50)
+        print(f"Job Title: {job['job_title']}")
+        # print("\n" + "-"*50)
+        # print(f"Job Category: {job['job_category']}")
+        # print("\n" + "-"*50)
+        # print(f"Job Description: {job['job_description']}")
+        # print("\n" + "-"*50)
+        # print(f"Client Info: {job['client_info']}")
+        # print("\n" + "-"*50)
+        # print(f"Clean Text: {job['clean_text']}")
+        # print("\n" + "-"*50)
+        # print(f"Raw Text: {job['raw_text']}")
+        print("="*50)

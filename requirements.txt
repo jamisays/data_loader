@@ -1,0 +1,9 @@
+langchain
+python-dotenv
+langchain_community
+pypdf
+psycopg
+psycopg[binary,pool]
+streamlit
+langchain_ollama
+langchain-openai
