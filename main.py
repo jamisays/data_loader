@@ -7,7 +7,7 @@ from utils import display_job_descriptions
 
 
 if __name__ == "__main__":
-    # To maintain original functionality, you can add a CLI switch
+    # Set up argument
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', choices=['process', 'app'], default='app')

@@ -1,5 +1,7 @@
 import streamlit as st
-from .agent_setup import create_agent
+
+from db.supabase.operations import SupabaseOperations
+from streamlit_app.agent_setup_local import create_agent
 from .render_sidebar import render_llm_sidebar
 from .ui import handle_user_input, init_chat_history, render_chat_messages
 
@@ -19,7 +21,7 @@ def run_streamlit_app():
     
     # Initialize database and agent
     try:
-        from db.connect_for_st import get_db_connection_2
+        from db.local.connect_for_st import get_db_connection_2
         db_connection = get_db_connection_2()
         agent = create_agent(db_connection)
     except Exception as e:
